@@ -1,0 +1,129 @@
+
+body{
+    /* background-color: rgb(236, 207, 169); */
+    /* background-image: url("../texture.png"); */
+    font-family: Georgia, serif;
+    
+}
+section{
+    padding-bottom: 55px;
+    padding-top: 55px;
+    box-shadow: 0px -4px 22px -16px #888888;
+  
+}
+.carousel-caption{
+    background-color: #decebd7a;
+    background-color: rgba(220, 220, 220, 0.295);
+    width: 100%;
+    left: 0;
+    bottom: 100px;
+
+}
+
+.icon{
+    width: 20px;
+}
+#home{
+    padding: 0px;
+}
+#home div.container-fluid{
+    padding: 0px;
+}
+.img-gallery{
+    object-fit: cover;
+    image-orientation: from-image;
+}
+
+div .gallery-item{
+    /* height: 200px; */
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.carousel-image{
+    height: 85vh;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-fluid{
+    max-width: 2000px;
+}
+#contact_info{
+    /* background-color: gray; */
+    color: white;
+    padding: 0px;
+}
+
+#contact_info a:active{
+    color: rgb(184, 180, 174);
+}
+
+#contact_info a{
+    color: white;
+}
+#contact_info a:hover {
+    color: black;
+}
+.checklist-ul {
+    list-style: none;
+    padding: 0;
+    
+}
+.checklist-ul li {
+    padding: 0 0 0 25px;
+    position: relative;
+    margin-bottom: 5px;
+
+}
+.checklist-ul li:before {
+    font-size: 1.5em;
+    position: absolute;
+    left: 5px;
+    content: "\2713";
+    color: rgb(0, 190, 0);
+  }
+
+@media screen and (max-width: 600px) {
+    
+    .presentation-column{
+        width: 140px;
+    }
+    #products div.row div{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+   
+    
+    #products div.row div{
+        margin: auto;
+    }
+
+    #products div.row div.col-md-3:nth-of-type(even){
+        background-color:#decebd7a;
+        padding-top: 10px;
+    }
+}
+
+section:before {
+    display: block;
+    content: "";
+    height: 50px;
+    margin: -50px 0 0;
+}
+
+#products{
+    /* background-color: #decebd7a; */
+    background-color: rgba(220, 220, 220, 0.295);
+    
+}
+section:nth-last-of-type(odd){
+    background-color: rgba(220, 220, 220, 0.295);
+}
+.partners-img{
+    max-height: 80px;
+}
+
