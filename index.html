@@ -23,12 +23,12 @@
         
     </head>
 
-    <body>
+    <body itemscope itemtype="https://schema.org/HomeAndConstructionBusiness">
         <!-- Navigation -->
         <nav class="navbar navbar-expand-md sticky-top bg-dark navbar-dark" id="main-nav" >
-
+            
             <div class="container-fluid d-flex">
-                <span class="navbar-brand mr-auto p-2">Τζίμης <a href="tel:+306947765814" class="btn btn-outline-light">+306947765814</a>
+                <span class="navbar-brand mr-auto p-2">Τζίμης <a href="tel:+306947765814" class="btn btn-outline-light" ><span itemprop="telephone">+306947765814</span></a>
                 </span>
 
                 <button class="btn btn-secondary d-block d-md-none p-2" data-toggle="collapse" data-target="#nav-list"><span class="navbar-toggler-icon"></span></button>
@@ -42,316 +42,349 @@
                     </ul>
                 </div>
 
-
             </div>
         </nav>  
 
 
         <!-- Home Section with carousel --->
 
-        <section id="home">
+        <header id="home">
+            <h1 class="d-none">
+                Ανακαίνιση σπιτιού , μερεμέτια σε όλη την <span itemprop="areaServed">Αθήνα</span>.
+            </h1>
             <div class="container-fluid">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div id="carousel" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#caroulel" data-slide-to="1"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100 carousel-image" src="images/gallery/rotated3.jpg" alt="Κρυφός φωτισμός φωτογραφία">
-                            <div class="carousel-caption">
-    
-                                <h1>Ανακαινίστε το σπίτι σας έξυπνα και οικονομικά!</h1>
+                            <img itemprop="photo" class="d-block w-100 carousel-image" src="images/gallery/rotated3.jpg" alt="Κρυφός φωτισμός φωτογραφία">
+                            <section class="carousel-caption">    
+                                <h2>Ανακαινίστε το σπίτι σας έξυπνα και οικονομικά!</h2>
                                 <p>
                                     Παροχή υπηρεσιών σε όλη την Αθήνα.
-                                </p>
-                                
-                            </div>
+                                </p>                               
+                            </section>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100 carousel-image" src="images/crop/rotated1.jpg" alt="Επισκευή τζακιού φωτογραφία">
-                            <div class="carousel-caption">
-                                <h1>Παντός τύπου μερεμέτια</h1>
+                            <img itemprop="photo" class="d-block w-100 carousel-image" src="images/crop/rotated1.jpg" alt="Επισκευή τζακιού φωτογραφία">
+                            <section class="carousel-caption">
+                                <h2>Παντός τύπου μερεμέτια</h2>
                                 <p>Δωρεάν εκτίμηση κόστους επισκευής.</p>
-                            </div>
+                            </section>
                         </div>
                     </div>
 
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
             </div>
 
-        </section>
-
-
-        <section id="products">
-            <div class="container">
-                <div class="row">
-                    <!-- Anadomisi -->
-                    <div class="col-md-3">
-                        <div class="row">
-                            <div class="col-md-12 col-sm-6  presentation-column">
-                                <img class="img-fluid presentation-column" src="images/icons/document-construction-icon.png" alt="Επισκευές Μερεμέτια" style="width:200px;">
-                            </div>
-                            
-                            <div class="col-md-12 col-sm-6 ">
+        </header>
+        <main> 
+            <article id="products" class="pt-3 pb-2" itemprop="makesOffer" itemscope itemtype="https://schema.org/Offer">
+                <h2 class="text-center">Υπηρεσίες ανακαίνισης</h2>
+                <div class="container">
+                    <div class="row">
+                        <!-- Anadomisi -->
+                        <div class="col-md-3">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-6  presentation-column">
+                                    <img class="img-fluid presentation-column" src="images/icons/document-construction-icon.png" alt="Επισκευές Μερεμέτια" style="width:200px;">
+                                </div>
                                 
-                                <h3 class="h4 text-center">Ανακαίνιση κατοικίας</h3>
-                                <hr>
-                                <p>
-                                    <ul class="checklist-ul">
-                                        <li><h2 class="h5">Ανακαίνιση Εσωτερικού Χώρου</h2></li>
-                                        <li><h2 class="h5">Ανακαίνιση Εξωτερικού Χώρου</h2></li>
-                                        <li><h2 class="h5">Μπαλκόνια</h2></li>
-                                    </ul>
-                                </p>
+                                <section class="col-md-12 col-sm-6 ">
+                                    
+                                    <h3 class="h4 text-center" itemprop="category">Ανακαίνιση κατοικίας</h3>
+                                    <hr>
+                                    <p>
+                                        <ul class="checklist-ul">
+                                            <li><h4 class="h5" itemprop="category">Ανακαίνιση Εσωτερικού Χώρου</h4></li>
+                                            <li><h4 class="h5" itemprop="category">Ανακαίνιση Εξωτερικού Χώρου</h4></li>
+                                            <li><h4 class="h5" itemprop="category">Μπαλκόνια</h4></li>
+                                        </ul>
+                                    </p>
+                                </section>
                             </div>
                         </div>
-                    </div>
-                    <!-- Gypsosanides -->
-                    <div class="col-md-3">
-                        <div class="row">
-                            <div class="col-md-12 col-sm-6 presentation-column">
-                                <img class="img-fluid" src="images/icons/layers-icon.png" alt="Γυψοσανίδες" style="width:200px;">
-                            </div>
-                            
-                            <div class="col-md-12 col-sm-6">
+                        <!-- Gypsosanides -->
+                        <div class="col-md-3">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-6 presentation-column">
+                                    <img class="img-fluid" src="images/icons/layers-icon.png" alt="Γυψοσανίδες" style="width:200px;">
+                                </div>
                                 
-                                <h3 class="h4 text-center">Γυψοσανίδες</h3>
-                                <hr>
-                                <p>
-                                    <ul class="checklist-ul">
-                                        <li><h2 class="h5">Χωρίσματα</h2></li>
-                                        <li><h2 class="h5">Μόνωση (θερμομόνωση, ηχομόνωση, υγρομόνωση ή στεγανοποίηση</h2></li>
-                                        <li><h2 class="h5">Ψευδοροφές</h2></li>
-                                        <li><h2 class="h5">Κρυφός φωτισμός</h2></li>
-                                        <li><h2 class="h5">Γύψινες κατασκευές</h2></li>
-                                        <li><h2 class="h5">Τζάκια</h2></li>
-                                        <li><h2 class="h5">Σχέδια με γυψοσανίδα μέσα στον χώρο σας</h2></li>
-                                    </ul>
-                                </p>
+                                <section class="col-md-12 col-sm-6">
+                                    
+                                    <h3 class="h4 text-center" itemprop="category">Γυψοσανίδες</h3>
+                                    <hr>
+                                    <p>
+                                        <ul class="checklist-ul">
+                                            <li><h4 class="h5" itemprop="category">Χωρίσματα</h4></li>
+                                            <li><h4 class="h5" itemprop="category">Μόνωση (θερμομόνωση, ηχομόνωση, υγρομόνωση ή στεγανοποίηση</h4></li>
+                                            <li><h4 class="h5" itemprop="category">Ψευδοροφές</h4></li>
+                                            <li><h4 class="h5" itemprop="category">Κρυφός φωτισμός</h4></li>
+                                            <li><h4 class="h5" itemprop="category">Γύψινες κατασκευές</h4></li>
+                                            <li><h4 class="h5" itemprop="category">Τζάκια</h4></li>
+                                            <li><h4 class="h5" itemprop="category">Σχέδια με γυψοσανίδα μέσα στον χώρο σας</h4></li>
+                                        </ul>
+                                    </p>
+                                </section>
                             </div>
                         </div>
-                    </div>
-                    <!-- Vapsimata -->
-                    <div class="col-md-3">
-                        <div class="row">
-                            <div class="col-md-12 col-sm-6 presentation-column">
-                                <img class="img-fluid" src="images/Painting-icon.png" alt="Βαψίματα χώρου" style="width:200px;">
-                            </div>
-                            
-                            <div class="col-md-12 col-sm-6">
+                        <!-- Vapsimata -->
+                        <div class="col-md-3">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-6 presentation-column">
+                                    <img class="img-fluid" src="images/Painting-icon.png" alt="Βαψίματα χώρου" style="width:200px;">
+                                </div>
                                 
-                                <h3 class="h4 text-center">Βάψιμο κατοικίας</h3>
-                                <hr>
-                                <p>
-                                    <ul class="checklist-ul">
-                                        <li><h2 class="h5">Βάψιμο Εσωτερικού Χώρου</h2></li>
-                                        <li><h2 class="h5">Βάψιμο Εξωτερικού Χώρου</h2></li>
-                                        <li><h2 class="h5">Στοκάρισμα τοίχου Σπατουλάρισμα</h2></li>
-                                        <li><h2 class="h5">Βάψιμο με λαδομπογιές</h2></li>
-                                    </ul>
-                                </p>
+                                <section class="col-md-12 col-sm-6">
+                                    
+                                    <h3 class="h4 text-center" itemprop="category">Βάψιμο κατοικίας</h3>
+                                    <hr>
+                                    <p>
+                                        <ul class="checklist-ul">
+                                            <li><h4 class="h5" itemprop="category">Βάψιμο Εσωτερικού Χώρου</h4></li>
+                                            <li><h4 class="h5" itemprop="category">Βάψιμο Εξωτερικού Χώρου</h4></li>
+                                            <li><h4 class="h5" itemprop="category">Στοκάρισμα τοίχου Σπατουλάρισμα</h4></li>
+                                            <li><h4 class="h5" itemprop="category">Βάψιμο με λαδομπογιές</h4></li>
+                                        </ul>
+                                    </p>
+                                </section>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Epektasi udravlikwn -->
-                    <div class="col-md-3">
-                        <div class="row">
-                            <div class="col-md-12 col-sm-6  presentation-column">
-                                <img class="img-fluid" src="images/icons/wrench-screwdriver-icon.png" alt="Επισκευή σπιτιού" style="width:200px;">
-                            </div>
-                            <div class="col-md-12 col-sm-6">
-                                
-                                <h3 class="h4 text-center">Υδραυλικά - Ηλεκτρικά</h3>
-                                <hr>
-                                <p>
-                                    <ul class="checklist-ul">
-                                        <li><h2 class="h5">Εγκατάσταση Υδραυλικών</h2></li>
-                                        <li><h2 class="h5">Επέκταση, Επιδιόρθωση Υδραυλικών</h2></li>
-                                        <li><h2 class="h5">Εγκατάσταση Ηλεκτρικών</h2></li>
-                                        <li><h2 class="h5">Επέκταση, Επιδιόρθωση Ηλεκτρικών</h2></li>
-                                    </ul>
-                                </p>
+                        <!-- Epektasi udravlikwn -->
+                        <div class="col-md-3">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-6  presentation-column">
+                                    <img class="img-fluid" src="images/icons/wrench-screwdriver-icon.png" alt="Επισκευή σπιτιού" style="width:200px;">
+                                </div>
+                                <section class="col-md-12 col-sm-6">
+                                    
+                                    <h3 class="h4 text-center" itemprop="category">Υδραυλικά - Ηλεκτρικά</h3>
+                                    <hr>
+                                    <p>
+                                        <ul class="checklist-ul">
+                                            <li><h4 class="h5" itemprop="category">Εγκατάσταση Υδραυλικών</h4></li>
+                                            <li><h4 class="h5" itemprop="category">Επέκταση, Επιδιόρθωση Υδραυλικών</h4></li>
+                                            <li><h4 class="h5" itemprop="category">Εγκατάσταση Ηλεκτρικών</h4></li>
+                                            <li><h4 class="h5"itemprop="category">Επέκταση, Επιδιόρθωση Ηλεκτρικών</h4></li>
+                                        </ul>
+                                    </p>
+                                </section>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
-            </div>
-        </section>
+            </article>
 
+            
+            <!-- Λιγα λόγια -->
+            <article id="description" class="container" itemprop="makesOffer" itemscope itemtype="https://schema.org/Offer">
+                    <h2 class="text-center">
+                        Παροχές ανακαίνισης
+                    </h2>
+                    <hr>
+                    <section class="p-2">
+                        <h3 class="font-weight-bold text-center">Μια πρώτη γνωριμία..</h3>
+                        <p>
+                            Είμαι ελεύθερος επαγγελματίας και δραστηριοποιούμαι τα τελευταία 18 χρόνια στον χώρο ανακαίνισης σπιτιών στην περιοχή της Αθήνας. 
+                        </p>
+                        <p>
+                            Αναλαμβάνω την αναδιαμόρφωση εσωτερικών και εξωτερικών χώρων.<mark> Γκρέμισμα τοίχων και αναδόμιση του χώρου με γυψοσανίδες-με ή χωρίς μόνωση-, 
+                        <span itemprop="category">κατασκευή ψευδοροφών</span>,<span itemprop="category"> εφαρμογή κρυφού φωτισμού</span> και διάφορες <span itemprop="category">γύψινες κατασκευές</span></mark>.
+                            Παράλληλα φροντίζω για την εγκατάσταση, επέκταση και επιδιόρθωση υδραυλικών. Επιπλέον, αναλαμβάνω την επισκευή μπαλκονιών με χρήση <span itemprop="category">εξωτερικής σκάλωσιάς</span>.
         
-        <!-- Λιγα λόγια -->
-        <section id="description">
-            <div class="container">
-                <h2 class="text-center">
-                    Υπηρεσίες ανακαίνισης
-                </h2>
-                <hr>
-                <h5 class="font-weight-bold text-center">Μια πρώτη γνωριμία..</h5>
-                <p>
-                    Είμαι ελεύθερος επαγγελματίας και δραστηριοποιούμαι τα τελευταία 18 χρόνια στον χώρο ανακαίνισης σπιτιών στην περιοχή της Αθήνας. 
-                </p>
-                <p>
-                    Αναλαμβάνω την αναδιαμόρφωση εσωτερικών και εξωτερικών χώρων. Γκρέμισμα τοίχων και αναδόμιση του χώρου με γυψοσανίδες-με ή χωρίς μόνωση-, 
-                    κατασκευή ψευδοροφών, εφαρμογή κρυφού φωτισμού και διάφορες γύψινες κατασκευές.
-                    Παράλληλα φροντίζω για την εγκατάσταση, επέκταση και επιδιόρθωση υδραυλικών. Επιπλέον, αναλαμβάνω την επισκευή μπαλκονιών με χρήση εξωτερικής σκάλωσιάς.
-
-                </p>
-                <p class="text-center">
-                    Αναλαμβάνω παντός τύπου μερεμέτια.
-                </p>
-                
-
-                <h2 class="font-weight-bold text-center h5">Κατασκευές με γυψοσανίδα</h2>
-                <p class="text-center">
-                    Αναδείξτε τον χώρο σας με εφαρμογή γυψοσανίδας.
-                </p>
-                <h2 class="font-weight-bold text-center h6">Διαρρύθμιση χώρου</h2>
-                <p>
-                    Τα διαχωριστικά ενιαίου χώρου με γυψοσανίδα -η αλλιώς και χωρίσματα- αποτελούν μία γρήγορη, εύκολη, ευέλικτη και ταυτοχρόνος
-                    οικονομική λύση για να αναδιαμορφώσετε τον χώρο σας. Διαρρυθμίστε τον χώρο του γραφείου σας ή της κατοικίας σας και δημιουργήστε νέους χρηστικούς χώρους. 
-                    Επιπλέον στο εσωτερικό των γύψινων χωρισμάτων διοχετεύονται ηλεκτρικές, υδραυλικές  ή και τηλεφωνικές εγκαταστάσεις με αποτέλεσμα την πλήρη λειτουργικότητα
-                     του νεοδόμητου χώρου.
-                </p>
-                <h2 class="font-weight-bold text-center h6">Αισθητική και πρακτικότητα</h2>
-                <p>
-                    Εκτώς απο την επέκταση κάθε είδους εγκαταστάσεων (π.χ. ηλεκτρικών), κατασκευές με γυψοσανίδα μπορούν να λύσουν και άλλα προβλήματα όπως είναι αυτό της μόνωσης.
-                    Αναλυτικότερα μπορεί να προσφέρει λύσεις στα προβλήματα ηχομόνωσης, θερμομόνωσης και υγρομόνωσης -ή και αλλίως στεγανοποίησης. Ταυτόχρονα με την αντιμετώπιση πρακτικών ζητημάτων, οι κατασκευές
-                    με γυψοσανίδα, όπως για παράδειγμα οι <b>ψευδοροφές</b> και ο <b>κρυφός φωτισμός</b> δίνουν μία νέα δυναμική στην αισθητική του χώρου. Επιπρόσθετα 
-                    αναλαμβάνουμε το <b>μοντάρισμα τζακιών</b> και την κάλυψη τους με πυράντοχη γυψοσανίδα.
-                </p>
-                <h5 class="font-weight-bold text-center">Αναλαμβάνουμε βαψίματα στον χώρο σας μέσα και έξω</h5>
-                <p class="h6 font-weight-bold">
-                    Τα μερεμέτια και οι μικροεπισκευές που χρειάζεται ένα σπίτι είναι εκατοντάδες:
-                </p>
-                <ul>
-                    <li>Βάψιμο τοίχου</li>
-                    <li>Μικροφθορές</li>
-                    <li>Κτισίματα</li>
-                    <li>Γρεμίσματα</li>
-                    <li>Επισκευή/Επέκταση υδραυλικών</li>
-                    <li>Επισκευή/Επέκταση ηλεκτρικών</li>
-                    <li>Επιδιόρθωση οροφής</li>
-                    <li>Υπόστεγα</li>
-                    <li>Σοβάτισμα</li>
-                    <li>Καλύψεις τζακιών με ή χωρίς σχέδιο (μοντάρισμα και κάλυψη με πυράντοχη γυψοσανίδα)</li>
-                    <li>Μερεμέτια και αλλα πολλά..</li>
-                </ul>
-                <h2 class="font-weight-bold text-center h5">Επισκευή μπαλκονιού με χρήση εξωτερικής κρεμαστής σκαλωσιάς</h2>
-                <p>
-                    Με την πάροδο του χρόνου οι σοβάδες των μπαλκονιών αποσαθρώνονται και πολλές φορές αποκολλούνται και πέφτουν με άμεσο αποτέλεσμα τον κίνδυνο των 
-                    περαστικών πεζών. Η επισκευή τους μπορεί να γίνει με <b>δικιά μας κρεμαστή σκαλωσιά</b> εξω απο το μπαλκόνι και έτσι η χρήση γερανού να μην είναι απαραίτητη, μειώνοντας ταυτόχρονα σημαντικά το κόστος της επιδιόρθωσης.
-                </p>
-            </div>
-        </section>
-        
+                        </p>
+                        <p class="text-center">
+                            Αναλαμβάνω <span itemprop="category">παντός τύπου μερεμέτια</span>.
+                        </p>
+                    </section>
+                    
+                    <section class="p-2">
+                        <h3 class="font-weight-bold text-center">Κατασκευές με γυψοσανίδα</h3>
+                        <p class="text-center">
+                            Αναδείξτε τον χώρο σας με εφαρμογή γυψοσανίδας.
+                        </p>
+                        <h3 class="font-weight-bold text-center h6">Διαρρύθμιση χώρου</h3>
+                        <p>
+                            Τα διαχωριστικά ενιαίου χώρου με γυψοσανίδα -η αλλιώς και χωρίσματα- αποτελούν μία γρήγορη, εύκολη, ευέλικτη και ταυτοχρόνος
+                            οικονομική λύση για να αναδιαμορφώσετε τον χώρο σας. Διαρρυθμίστε τον χώρο του γραφείου σας ή της κατοικίας σας και δημιουργήστε νέους χρηστικούς χώρους. 
+                            Επιπλέον στο εσωτερικό των γύψινων χωρισμάτων διοχετεύονται ηλεκτρικές, υδραυλικές  ή και τηλεφωνικές εγκαταστάσεις με αποτέλεσμα την πλήρη λειτουργικότητα
+                            του νεοδόμητου χώρου.
+                        </p>
+                    </section>
+                    <section class="p-2">
+                        <h3 class="font-weight-bold text-center">Αισθητική και πρακτικότητα</h3>
+                        <p>
+                            Εκτώς απο την επέκταση κάθε είδους εγκαταστάσεων (π.χ. ηλεκτρικών), κατασκευές με γυψοσανίδα μπορούν να λύσουν και άλλα προβλήματα όπως είναι αυτό της μόνωσης.
+                            Αναλυτικότερα μπορεί να προσφέρει <mark itemprop="category">λύσεις στα προβλήματα ηχομόνωσης, θερμομόνωσης και υγρομόνωσης -ή και αλλίως στεγανοποίησης</mark>. Ταυτόχρονα με την αντιμετώπιση πρακτικών ζητημάτων, οι κατασκευές
+                            με γυψοσανίδα, όπως για παράδειγμα οι <mark itemprop="category">ψευδοροφές</mark> και ο <mark itemprop="category">κρυφός φωτισμός</mark> δίνουν μία νέα δυναμική στην αισθητική του χώρου. Επιπρόσθετα 
+                            αναλαμβάνουμε το <mark itemprop="category">μοντάρισμα τζακιών</mark> και την κάλυψη τους με πυράντοχη γυψοσανίδα.
+                        </p>
+                    </section>
+                    <section class="p-2">
+                        <h3 class="font-weight-bold text-center">Αναλαμβάνουμε βαψίματα στον χώρο σας μέσα και έξω</h3>
+                        <p class="h6 font-weight-bold">
+                            Τα <span itemprop="category">μερεμέτια</span>s και οι μικροεπισκευές που χρειάζεται ένα σπίτι είναι εκατοντάδες:
+                        </p>
+                        <ul>
+                            <li itemprop="category">Βάψιμο τοίχου</li>
+                            <li itemprop="category">Μικροφθορές</li>
+                            <li itemprop="category">Κτισίματα</li>
+                            <li itemprop="category">Γρεμίσματα</li>
+                            <li itemprop="category">Επισκευή/Επέκταση υδραυλικών</li>
+                            <li itemprop="category">Επισκευή/Επέκταση ηλεκτρικών</li>
+                            <li itemprop="category">Επιδιόρθωση οροφής</li>
+                            <li itemprop="category">Υπόστεγα</li>
+                            <li itemprop="category">Σοβάτισμα</li>
+                            <li itemprop="category">Καλύψεις τζακιών με ή χωρίς σχέδιο (μοντάρισμα και κάλυψη με πυράντοχη γυψοσανίδα)</li>
+                            <li itemprop="category">Μερεμέτια και αλλα πολλά..</li>
+                        </ul>
+                    </section>
+                    <section class="p-2">
+                        <h3 class="font-weight-bold text-center">Επισκευή μπαλκονιού με χρήση εξωτερικής κρεμαστής σκαλωσιάς</h3>
+                        <p>
+                            Με την πάροδο του χρόνου οι σοβάδες των μπαλκονιών αποσαθρώνονται και πολλές φορές αποκολλούνται και πέφτουν με άμεσο αποτέλεσμα τον κίνδυνο των 
+                            περαστικών πεζών. Η επισκευή τους μπορεί να γίνει με <b>δικιά μας κρεμαστή σκαλωσιά</b> εξω απο το μπαλκόνι και έτσι η χρήση γερανού να μην είναι απαραίτητη, μειώνοντας ταυτόχρονα σημαντικά το κόστος της επιδιόρθωσης.
+                        </p>
+                    </section>
+            </article>
+        </main>
          <!-- Gallery Section -->
-        <section id="gallery">
-            <div class="container-fluid">
-                
-                <h5 class="h2 text-center">Η δουλειά μας</h2>
+        <section id="gallery" class="container-fluid">
+                <h2 class="h2 text-center">Η δουλειά μας</h2>
                 <hr>
-                <div class="row d-flex justify-content-center">
-                                
+                <div class="row">
                     <div class="col-md-2 col-sm-4 col-6 gallery-item">
-                        <a href="images/gallery/rotated1.jpg" data-lightbox="mygallery">
-                            <img src="images/gallery/rotated1.jpg" class="img-fluid img-gallery" alt="Επισκευή τζακιού">
-                        </a>
-
+                        <figure >
+                            <a href="images/gallery/rotated1.jpg" data-lightbox="mygallery">
+                                <img itemprop="photo" src="images/gallery/rotated1.jpg" class="img-fluid img-gallery" alt="Επισκευή τζακιού">
+                            </a>
+                            <figcaption>Επισκευή τζακιού</figcaption>
+                        </figure>
+                    </div>  
+                    <div class="col-md-2 col-sm-4 col-6 gallery-item">
+                        <figure >
+                            <a href="images/gallery/rotated2.jpg" data-lightbox="mygallery">
+                                <img itemprop="photo" src="images/gallery/rotated2.jpg" class="img-fluid img-gallery" alt="Βάψιμο τοίχου">
+                            </a>
+                            <figcaption>
+                                Βάψιμο τοίχου
+                            </figcaption>
+                        </figure>
                     </div>
                     <div class="col-md-2 col-sm-4 col-6 gallery-item">
-                        <a href="images/gallery/rotated2.jpg" data-lightbox="mygallery">
-                            <img src="images/gallery/rotated2.jpg" class="img-fluid img-gallery" alt="Βάψιμο τοίχου">
-                        </a>
-    
+                        <figure>
+                            <a href="images/gallery/rotated3.jpg" data-lightbox="mygallery">
+                                <img itemprop="photo" src="images/gallery/rotated3.jpg" class="img-fluid img-gallery" alt="Κρυφός φωτισμός">
+                            </a>
+                            <figcaption>Κρυφός φωτισμός</figcaption>
+                        </figure>
                     </div>
                     <div class="col-md-2 col-sm-4 col-6 gallery-item">
-                        <a href="images/gallery/rotated3.jpg" data-lightbox="mygallery">
-                            <img src="images/gallery/rotated3.jpg" class="img-fluid img-gallery" alt="Κρυφός φωτισμός">
-                        </a>
+                        <figure>
+                            <a href="images/gallery/rotated4.jpg" data-lightbox="mygallery">
+                                <img itemprop="photo" src="images/gallery/rotated4.jpg" class="img-fluid img-gallery" alt="Επισκευή οροφής">
+                            </a>
+                            <figcaption>Επισκευή οροφής</figcaption>
+                        </figure>
                     </div>
                     <div class="col-md-2 col-sm-4 col-6 gallery-item">
-                        <a href="images/gallery/rotated4.jpg" data-lightbox="mygallery">
-                            <img src="images/gallery/rotated4.jpg" class="img-fluid img-gallery" alt="Επισκευή οροφής">
-                        </a>
+                        <figure>
+                            <a href="images/gallery/rotated5.jpg" data-lightbox="mygallery">
+                                <img itemprop="photo" src="images/gallery/rotated5.jpg" class="img-fluid img-gallery" alt="Εφαρμογή κρυφού φωτισμού">
+                            </a>
+                            <figcaption>Επισκευή οροφής</figcaption>
+                        </figure>
                     </div>
                     <div class="col-md-2 col-sm-4 col-6 gallery-item">
-                        <a href="images/gallery/rotated5.jpg" data-lightbox="mygallery">
-                            <img src="images/gallery/rotated5.jpg" class="img-fluid img-gallery" alt="Εφαρμογή κρυφού φωτισμού">
-                        </a>
+                        <figure>
+                            <a href="images/gallery/rotated6.jpg" data-lightbox="mygallery">
+                                <img itemprop="photo" src="images/gallery/rotated6.jpg" class="img-fluid img-gallery" alt="Ανακαίνιση εσωτερικού χώρου">
+                            </a>
+                            <figcaption>Ανακαίνιση εσωτερικού χώρου</figcaption>
+                        </figure>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-6 gallery-item">
-                        <a href="images/gallery/rotated6.jpg" data-lightbox="mygallery">
-                            <img src="images/gallery/rotated6.jpg" class="img-fluid img-gallery" alt="Ανακαίνιση εσωτερικού χώρου">
-                        </a>
-                    </div>
-                    <div class="col-md-2 col-sm-4 col-6 gallery-item">
+                    
+                    <figure class="col-md-2 col-sm-4 col-6 gallery-item">
                         <a href="images/gallery/rotated7.jpg" data-lightbox="mygallery">
-                            <img src="images/gallery/rotated7.jpg" class="img-fluid img-gallery" alt="Ανακαίνιση δωματίου">
+                            <img itemprop="photo" src="images/gallery/rotated7.jpg" class="img-fluid img-gallery" alt="Ανακαίνιση δωματίου">
                         </a>
-                    </div>
-                    <div class="col-md-2 col-sm-4 col-6 gallery-item">
+                        <figcaption>Ανακαίνιση δωματίου</figcaption>
+                    </figure>
+                    <figure class="col-md-2 col-sm-4 col-6 gallery-item">
                         <a href="images/gallery/rotated8.jpg" data-lightbox="mygallery">
-                            <img src="images/gallery/rotated8.jpg" class="img-fluid img-gallery" alt="Εφαρμογή τζακιού">
+                            <img itemprop="photo" src="images/gallery/rotated8.jpg" class="img-fluid img-gallery" alt="Εφαρμογή τζακιού">
                         </a>
-                    </div>
+                        <figcaption>Εφαρμογή τζακιού</figcaption>
+                    </figure>
                     <div class="col-md-2 col-sm-4 col-6 gallery-item">
                         <a href="images/gallery/rotated9.jpg" data-lightbox="mygallery">
-                            <img src="images/gallery/rotated9.jpg" class="img-fluid img-gallery" alt="Μερεμέτια εσωτερικού χώρου">
+                            <img itemprop="photo" src="images/gallery/rotated9.jpg" class="img-fluid img-gallery" alt="Μερεμέτια εσωτερικού χώρου">
                         </a>
+                        <figcaption>Μερεμέτια εσωτερικού χώρου</figcaption>
                     </div>
                     <div class="col-md-2 col-sm-4 col-6 gallery-item">
-                        <a href="images/gallery/rotated10.jpg" data-lightbox="mygallery">
-                            <img src="images/gallery/rotated10.jpg" class="img-fluid img-gallery" alt="Γύψινες κατασκευές">
-                        </a>
-                    </div>
-
-                    <div class="col-md-2 col-sm-4 col-6 gallery-item">
-                        <a href="images/gallery/rotated11.jpg" data-lightbox="mygallery">
-                            <img src="images/gallery/rotated11.jpg" class="img-fluid img-gallery" alt="Χωρίσματα δωματίου">
-                        </a>
+                        <figure >
+                            <a href="images/gallery/rotated10.jpg" data-lightbox="mygallery">
+                                <img itemprop="photo" src="images/gallery/rotated10.jpg" class="img-fluid img-gallery" alt="Γύψινες κατασκευές">
+                            </a>
+                            <figcaption>Γύψινες κατασκευές</figcaption>
+                        </figure>
                     </div>
                     <div class="col-md-2 col-sm-4 col-6 gallery-item">
-                        <a href="images/gallery/rotated12.jpg" data-lightbox="mygallery">
-                            <img src="images/gallery/rotated12.jpg" class="img-fluid img-gallery" alt="Μερεμέτια τζακιού">
-                        </a>
+                        <figure>
+                            <a href="images/gallery/rotated11.jpg" data-lightbox="mygallery">
+                                <img itemprop="photo" src="images/gallery/rotated11.jpg" class="img-fluid img-gallery" alt="Χωρίσματα δωματίου">
+                            </a>
+                            <figcaption>Χωρίσματα δωματίου</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-6 gallery-item">
+                        <figure>
+                            <a href="images/gallery/rotated12.jpg" data-lightbox="mygallery">
+                                <img itemprop="photo" src="images/gallery/rotated12.jpg" class="img-fluid img-gallery" alt="Μερεμέτια τζακιού">
+                            </a>
+                            <figcaption>Μερεμέτια τζακιού</figcaption>
+                        </figure>
                     </div>
                 </div>
                 <hr>
-                
-
-            </div>
         </section>
 
-        <section id="partners">
-            <div class="container">
-                <h6 class="text-center h4">Συνεργαζόμαστε με</h6>
-                <hr>
-                <div class="row d-flex justify-content-center">
-                   
-                    <a href="https://www.leroymerlin.gr/" target="_blank">
-                        <img class="img-fluid partners-img" src="images/partners/leroy.png" alt="Leroy Merlin partnership">
-                    </a>
-                    <a href="https://www.vioper.gr/" target="_blank">
-                        <img class="img-fluid partners-img" src="images/partners/cropped-vioper-little-1.png" alt="Vioper partnership">
-                    </a>
-                </div>
-                <hr>
+        <section id="partners" class="container pt-3">
+            
+            <h2 class="text-center h4">Συνεργαζόμαστε με</h2>
+            <hr>
+            <div class="row d-flex justify-content-center" itemprop="subOrganization" itemscope itemtype="https://schema.org/Organization">
+                
+                <a href="https://www.leroymerlin.gr/" target="_blank">
+                    <img itemprop="photo" class="img-fluid partners-img" src="images/partners/leroy.png" alt="Leroy Merlin partnership">
+                </a>
+                <span itemprop="legalName" class="d-none">Leroy Merlin</span>
+                <a href="https://www.vioper.gr/" target="_blank">
+                    <img itemprop="photo" class="img-fluid partners-img" src="images/partners/cropped-vioper-little-1.png" alt="Vioper partnership">
+                </a>
+                <span itemprop="legalName" class="d-none">Vioper</span>
             </div>
+            <hr>
+        
         </section>
 
         <!-- Contact infos -->
-        <section id="contact_info" class="bg-secondary">
+        <footer id="contact_info" class="bg-secondary">
             <div class="container">
                 <h2 class="text-center">Επικοινωνία</h2>
                 <hr>
@@ -374,10 +407,10 @@
                                 </tr>
                             </table> -->
 
-                            <ul class="list-unstyled text-center">
+                            <ul class="list-unstyled text-center" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
                                 <li> Τζίμης <a href="tel:+306947765814" class="btn btn-outline-light">+306947765814</a>
                                 </li>
-                                <li>Νηρηίδων 68, Παλαιό Φάληρο, Αθήνα, Τ.Κ. 175 61 </li>
+                                <li><span itemprop="streetAddress">Νηρηίδων 68</span>,<span itemprop="addressLocality">Παλαιό Φάληρο</span> ,<span itemprop="addressRegion">Αθήνα</span> , Τ.Κ. <span itemprop="postalCode">175 61</span> </li>
                             </ul>
                         </p>
                     </div>
@@ -394,7 +427,7 @@
 
                 
             </div>
-        </section>
+        </footer>
         
         <!-- backlnks -->
         <a href="https://atyourservice.com.cy/" style="display: none;" target="_blank"> Backlink</a>

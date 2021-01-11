@@ -5,7 +5,7 @@ body{
     font-family: Georgia, serif;
     
 }
-section{
+article, #gallery{
     padding-bottom: 55px;
     padding-top: 55px;
     box-shadow: 0px -4px 22px -16px #888888;
@@ -32,6 +32,9 @@ section{
 .img-gallery{
     object-fit: cover;
     image-orientation: from-image;
+}
+#gallery{
+    background-color: rgba(220, 220, 220, 0.295);
 }
 
 div .gallery-item{
@@ -107,22 +110,22 @@ div .gallery-item{
         padding-top: 10px;
     }
 }
-
+/* 
 section:before {
     display: block;
     content: "";
     height: 50px;
     margin: -50px 0 0;
-}
+} */
 
 #products{
     /* background-color: #decebd7a; */
     background-color: rgba(220, 220, 220, 0.295);
     
 }
-section:nth-last-of-type(odd){
+/* section:nth-last-of-type(odd){
     background-color: rgba(220, 220, 220, 0.295);
-}
+} */
 .partners-img{
     max-height: 80px;
 }
